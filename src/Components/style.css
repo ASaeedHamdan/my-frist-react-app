@@ -1,0 +1,207 @@
+:root{
+    --maincolor:#001e36;
+}
+
+
+ .asd
+ {
+     height: 100vh;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(10,1fr);
+     
+     grid-template-rows: 180px 184px 1fr 23px; 
+     grid-template-areas:" hed hed hed hed hed hed hed hed hed hed"
+      "col col col col col col col col col col"
+       "ved ved ved ved ved ved ved ved ved ved"
+       "foot foot foot foot foot foot foot foot foot foot";
+ }  
+ #header {
+     grid-area: hed ;
+    background-color: #f1f1f1; 
+    padding: 5px; 
+    color: black;
+    text-align: center; 
+    font-size: 90px; 
+    font-weight: bold;
+    position: relative; 
+    top: 0;
+    width: 100%; 
+    z-index: 9999;
+    transition: 0.2s; 
+  }
+  .child
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: ellipse(63% 65% at 37% 41%);
+   clip-path: ellipse(63% 65% at 37% 41%);
+   background-color: #e2e1d9;
+   color: #a1b30f;
+  }
+  #cont
+  {
+      grid-area: col;
+  }
+  .parent
+{
+    direction: rtl;
+    width: calc(100% - 20px);
+    position: relative;
+   margin: 10px 10px ;
+}
+.parent:first-child
+{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+}
+.num
+{
+    color: black;
+    font-weight: bold;
+
+}
+.empty
+{
+  position: absolute;
+  left: 0;
+  background-color: var(--maincolor);
+  top: 0;
+  width: 60%;
+  height: 100%;
+
+}
+.parent:nth-child(2)
+{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+}
+.link
+{
+    color: black;
+    font-weight: bold;  
+}
+.parent:nth-child(3)
+{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+}
+.adress
+{
+    color: black;
+    font-weight: bold;  
+}
+.btnn
+{
+    position: absolute;
+    left: 0;
+    background-color: var(--maincolor);
+    top: 0;
+    width: 10%;
+    height: 100%;
+  
+}
+a{
+    position: relative;
+  
+}
+img, svg {
+    position: absolute;
+    left: -26px;
+    top: 4px;
+    vertical-align: middle;
+    color: white;
+    
+}
+.asd2
+{
+    margin-left: 9px;
+}
+.parent:nth-child(4)
+{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px;
+}
+.setting
+{
+    color: black;
+    font-weight: bold;  
+
+}
+.vido{
+    grid-area: ved ;
+    margin-top: 10px;
+    direction: rtl;
+    position: relative;
+}
+.myvedios
+{
+    background-color:var(--maincolor);
+    font-weight: bold;
+    color: white;
+    width:calc(10% + 40px);
+    padding-top: 4px;
+    text-align: center;
+    height: 35px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.mybutt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butt
+{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25px;
+    background-color: var(--maincolor);
+    color: white;
+    font-weight: bold;
+    width: 125px;
+ 
+}
+.foot
+{
+    grid-area: foot;
+    background-color: gray;
+  
+}
+.foot ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot ul li 
+{
+   text-decoration: none;
+   margin-left: 19px;
+   padding: 10px;
+   transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+}
+
+.foot ul li a
+{
+
+   text-decoration: none;
+   margin-left: -32px;
+   color: black;
+ 
+}
+
